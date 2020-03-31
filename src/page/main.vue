@@ -5,19 +5,19 @@
         <div>
             <mu-flex class="flex-wrapper" align-items="center">
                 <mu-flex class="flex-demo" justify-content="center" fill>
-                    <mu-button color="primary"to="section">开始游戏</mu-button>
+                    <mu-button color="primary"to="/section">开始游戏</mu-button>
                 </mu-flex>
             </mu-flex>
             <br>
             <mu-flex class="flex-wrapper" align-items="center">
                 <mu-flex class="flex-demo" justify-content="center" fill>
-                    <mu-button color="primary" to="readGame">读取进度</mu-button>
+                    <mu-button color="primary" to="/readGame">读取进度</mu-button>
                 </mu-flex>
             </mu-flex>
             <br>
             <mu-flex class="flex-wrapper" align-items="center">
                 <mu-flex class="flex-demo" justify-content="center" fill>
-                    <mu-button color="primary" to="settingGame">设置</mu-button>
+                    <mu-button color="primary" to="/setGame">设置</mu-button>
                 </mu-flex>
             </mu-flex>
         </div>
