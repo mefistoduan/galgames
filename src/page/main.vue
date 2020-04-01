@@ -9,11 +9,11 @@
                 </mu-flex>
             </mu-flex>
             <br>
-            <mu-flex class="flex-wrapper" align-items="center">
-                <mu-flex class="flex-demo" justify-content="center" fill>
-                    <mu-button color="primary" to="/readGame">读取进度</mu-button>
-                </mu-flex>
-            </mu-flex>
+            <!--<mu-flex class="flex-wrapper" align-items="center">-->
+                <!--<mu-flex class="flex-demo" justify-content="center" fill>-->
+                    <!--<mu-button color="primary" to="/readGame">读取进度</mu-button>-->
+                <!--</mu-flex>-->
+            <!--</mu-flex>-->
             <br>
             <mu-flex class="flex-wrapper" align-items="center">
                 <mu-flex class="flex-demo" justify-content="center" fill>

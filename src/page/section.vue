@@ -46,6 +46,7 @@
             return {
                 speaker: '',
                 text: '',
+                playingText: false,
                 wordid: 1,
                 nextWordid: 1,
                 currentWordid: 1,
@@ -69,7 +70,6 @@
                 this.readEvent(i)
             },
             step() {
-                // this.changeBg(this.wordid);
                 let e = this.event;
                 this.stepWord(e[0]);
             },
@@ -89,7 +89,6 @@
                 } else {
                     // 继续对话
                     this.wordDisplay(e.content[cid].text);
-                    // this.text = e.content[cid].text;
                     this.speaker = this.RidtoRame(e.content[cid].rid);
                     this.manSrc = "../../static/img/man/" + this.RidtoHead(e.content[cid].rid);
                     this.cid += 1;
@@ -162,14 +161,17 @@
             wordDisplay(word) {
                 let index = 0;
                 let that = this;
+                this.text = '';
                 type();
-
                 function type() {
                     that.text = word.substring(0, index++);
-                    if (index > word.length) {
-                        return;
-                    } else {
+                    if(index == 0){
+                        that.playingText == true
+                    }
+                    if (index <= word.length && that.playingText == true) {
                         setTimeout(type, localStorage.speed);
+                    }else{
+                        that.text = word
                     }
                 }
             }
@@ -265,12 +267,12 @@
     }
 
     .text {
-        width: 100%;
+        width: 94%;
         overflow: hidden;
         display: block;
         margin: 0 auto;
-        text-indent: 20px;
         font-size: 16px;
+        text-align: left;
     }
 
     .choicePart /deep/ .mu-raised-button {
