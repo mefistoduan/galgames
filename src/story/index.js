@@ -23,7 +23,7 @@ let roles = [
     },
     {
         id: 2,
-        name: '查里曼大帝',
+        name: '查里大帝',
         head: 'king.jpg',
         karma: 0,//因果，业障
         friend: 0,//友好值
@@ -111,11 +111,11 @@ let events = [
     },
 ];
 
-
 let content = {};
 
 let initData = {
     events: events,
     roles: roles,
 };
+
 module.exports = initData;
